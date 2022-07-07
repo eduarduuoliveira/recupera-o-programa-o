@@ -1,0 +1,28 @@
+<script>
+    /*
+    PROBLEMA
+    Imagine o seguinte cenário: Durante o mês, uma pessoa almoça fora de casa todos os dias. Peça para o usuário informar qual o custo diário da refeição e também informar o custo diário da bebida.
+    Calcule o custo das refeições durante o mês, o custo das bebidas durante o mês e também o custo total mensal. Apresente os três resultados na tela.
+    Considere que o mês possui 22 dias úteis.
+    */
+
+    //ENTRADA
+
+    const refeicao = Number(prompt("INFORME O VALOR DIÁRIO DE REFEIÇÃO: "))
+    const bebida = Number(prompt("INFOME O CUSTO DIÁRIO DE BEBIDA: "))
+
+
+    //PROCESSAMENTO
+
+    const custoBebidas = bebida * 22
+    const custoComida = refeicao * 22
+    const custoTotal = custoBebidas + custoComida
+
+
+    //SAÍDA
+
+    document.write(`<br> O Valor Gasto Com Comida No Mês Foi De ${custoComida}R$`)
+    document.write(`<br> O Valor gasto com bebida no mês foi de ${custoBebidas}R$`)
+    document.write(`<br> A soma de todos os seus gastos com bebida e comida no mês foi de ${custoTotal}R$`)
+
+</script>

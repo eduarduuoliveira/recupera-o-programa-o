@@ -1,0 +1,27 @@
+<script>
+  /*
+    PROBLEMA
+    O tutor, para zelar pela saúde do pet, o leva no mínimo uma vez por ano ao veterinário, para que faça uma consulta e também aplique as vacinas recomendadas, como forma de proteção ao pet.
+    Peça para o usuário informar a idade do pet, o preço da consulta anual e o preço para a aplicação de vacinas.
+    Calcule quanto o tutor terá gasto com os cuidados mínimos recomendados durante toda a vida do pet.
+    Apresente o custo total em tela.
+    */
+
+  //ENTRADA
+
+  const idadePet = Number(prompt("INFORME A IDADE DO SEU PET: "));
+  const precoConsultaAnual = Number(
+    prompt("INFORME O VALOR DA CONSULTA ANUAL: ")
+  );
+  const aplicacaoVacinas = Number(
+    prompt("INFORME O VALOR DA APLICAÇÃO DE VACINAS: ")
+  );
+  //PROCESSAMENTO
+
+const gastoTotalPets = (aplicacaoVacinas + precoConsultaAnual) * idadePet
+
+  //SAÍDA
+
+document.write(`Com a idade do seu pet, você gastará durante a vida ${gastoTotalPets}R$`)
+
+</script>

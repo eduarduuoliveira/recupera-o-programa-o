@@ -1,0 +1,23 @@
+<script>
+    /*
+    PROBLEMA
+    Considere que um professor aplicou, durante o trimestre, duas atividades avaliativas para os alunos da disciplina de Programação, sendo que cada atividade teve um peso diferente.
+    Peça para o usuário informar qual foi o peso de cada atividade avaliativa (que deverá ser informada em números inteiros) e a nota que o aluno obteve em cada atividade avaliativa (que poderá ser em números decimais).
+    Calcule a média final obtida pelo aluno e a apresente em tela.
+    */
+
+    //ENTRADA
+    const nota1 = Number(prompt("INFORME A NOTA DA 1° AVALIAÇÃO: "))
+    const peso1 = Number(prompt("INFORME O PESO DA 1° AVALIAÇÃO: "))
+    const nota2 = Number(prompt("INFORME A NOTA DA 2° AVALIAÇÃO: "))
+    const peso2 = Number(prompt("INFORME O PESO DA 2° AVALIAÇÃO: "))
+
+    //PROCESSAMENTO
+
+    const mediaPonderada = ((nota1 * peso1) + (nota2 * peso2)) / (peso1 + peso2)
+
+    //SAÍDA
+
+    document.write(`A MÉDIA FINAL É ${mediaPonderada}`)
+
+</script>

@@ -1,0 +1,26 @@
+<script>
+    /*
+    PROBLEMA
+    Considere que o proprietário de uma motocicleta deseja saber qual foi o custo total da manutenção da motocicleta (revisões e combustível) que utilizou para se locomover para o trabalho.
+    Peça para o usuário informar quantos quilômetros a motocicleta consegue percorrer com cada litro de combustível e para informar também qual a quilometragem que já percorreu.
+    A cada dois mil (2000) quilômetros haverá uma revisão obrigatória, no valor de R$ 200,00.
+    Calcule a quantidade total de litros de combustível consumidos e também o custo total em revisão da motocicleta.
+    */
+
+    //ENTRADA
+
+    const quilometrosPorLitro = Number(prompt("INFORME QUANDOS QUILOMETROS FAZ COM 1L DE GASOLINA: "))
+    const quilometragem = Number(prompt("INFORME QUANTOS QUILOMETROS A MOTO JÁ RODOU"))
+
+    //PROCESSAMENTO
+
+    const litrosConsumidos = quilometragem / quilometrosPorLitro
+    const valorRevisao = Math.floor(quilometragem/2000) * 200
+
+
+    //SAÍDA
+   
+    document.write(`foram Consumidos ${litrosConsumidos} Litros De Gasolina E O Valor Da Revisão Total Foi De ${valorRevisao}`)
+    
+
+</script>
